@@ -1,0 +1,14 @@
+#section_photo{
+    h1{
+        @include titre_de_section
+    }
+
+    #galerie_photo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        
+      
+    }
+}
+   

@@ -1,0 +1,28 @@
+#section_bio{
+    display: flex;
+    margin: 0px 10px 0px 0px; 
+    border-top: 1px solid rgb(145, 144, 144,); 
+    position: relative;
+
+        img{
+            margin: 3px;
+            float: left;
+            width: 15%;
+        }
+
+        h1{
+           @include titre_de_section;
+        }
+
+        p{
+           text-align: justify;
+           margin: 10px;
+           a{
+               text-decoration: none;
+               color: $primary;
+               &:hover{
+                   color:red;
+               }
+           }
+        }
+}

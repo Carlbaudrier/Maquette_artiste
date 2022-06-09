@@ -1,0 +1,12 @@
+@mixin titre_de_section {
+    font-family: 'Calligraffitti', cursive;
+    background-color: $font_h1; 
+    text-align: center;
+}
+
+@mixin txt_deco {
+    font-family: 'Cormorant', serif;
+    text-decoration: none;
+    color: $primary;
+    font-size: 100%;
+}

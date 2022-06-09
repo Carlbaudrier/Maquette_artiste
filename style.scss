@@ -1,0 +1,70 @@
+@import "./partials/variables";
+@import "./partials/mixins";
+@import "./partials/header";
+@import "./partials/presentation";
+@import "./partials/carriere";
+@import "./partials/filmo";
+@import "./partials/footer";
+
+body{
+    margin: 0;
+    overflow: scroll;
+    background-color: rgba(250, 235, 215, 0.596);
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+    position: sticky;
+    top: 0%;
+    background-color: rgb(61, 61, 61);
+    z-index: 1;
+    height: 30px;
+    font-size: 120%;
+    align-items: center;
+
+    a{
+        @include txt_deco
+    }
+}
+
+.affiche_film{
+    margin: 5%;
+    width: 40%;
+     }
+
+
+@media screen and (min-width: 1000px) {
+
+        header h1 {
+            margin-bottom: 0px;
+        }
+
+        nav{
+                height: 50px;
+                font-size: xx-large;
+            }
+
+    
+
+        #section_photo{
+            .affiche_film{
+                width: 15%;
+            }
+        }
+body{
+    h1{
+        height: 50px;
+        font-size: xx-large;
+      }  
+
+    }
+a{
+         &:hover {
+             color: $secondary;
+            }      
+     }   
+
+}
+ 
